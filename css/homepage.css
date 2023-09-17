@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+.homepage {
+	--color-text: #cdbcbc;
+	--color-bg: #000;
+	--color-link: #fff;
+	--color-link-hover: #fff;
+	--cursor-bg: #5cafc1;
+	--cursor-blend-mode: exclusion;
+	--gradient-text-1: #e8c942;
+	--gradient-text-2: rgb(148 98 209);
+	background-image: url(../img/bg1.jpg);
+	background-size: cover;
+	color: #fff;
+}
+
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5, 0.5, 1);
+	}
+}
+
+
+
+
+body #cdawrap {
+	justify-self: start;
+}
+
+
+
+.content-homepage {
+	padding: 0 var(--page-padding);
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	min-height: 100vh;
+	position: relative;
+	justify-content: center;
+	align-items: start;
+	font-family: "greycliff-cf", sans-serif;
+	font-weight: 300;
+}
+
+.content-homepage h2 {
+	font-size: 16vw;
+	line-height: 1;
+	margin: 0;
+	pointer-events: none;
+	background-color: var(--gradient-text-1);
+	background-image: linear-gradient(45deg, var(--gradient-text-1), var(--gradient-text-2));
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.content-homepage h2 i {
+	font-family: "lores-9-plus-wide", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -1.75vw;
+	font-size: 14.25vw;
+}
+
+.content-homepage p {
+	margin: 3vh 0 0 0;
+	max-width: 30ch;
+	font-weight: 400;
+	font-size: clamp(1.5rem, 2vw, 2rem);
+	font-variation-settings: "wght" 400, "opsz" 72, "ital" 0;
+	pointer-events: none;
+}
+
+.cursor {
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	z-index: 99;
+	mix-blend-mode: var(--cursor-blend-mode);
+	--size: calc(100vw / var(--columns));
+}
+
+.cursor__inner {
+	display: grid;
+	grid-template-columns: repeat(var(--columns), var(--size));
+}
+
+.cursor__inner-box {
+	width: var(--size);
+	height: var(--size);
+	background: var(--cursor-bg);
+	opacity: 0;
+	border-radius: var(--cursor-radius);
+}
+
+@media screen and (min-width: 53em) {
+	:root {
+		--columns: 30;
+		--page-padding: 2rem;
+	}
+
+	.content-homepage {
+		align-items: center;
+	}
+}
