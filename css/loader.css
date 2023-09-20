@@ -1,0 +1,35 @@
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+
+}
+
+#svg-loader {
+    height: 300px;
+    width: 300px;
+    stroke-width: 3px;
+    stroke-dasharray: 3000;
+    animation: draw 8s ease;
+    background-color: #000000;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 3000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
