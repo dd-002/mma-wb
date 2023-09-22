@@ -1,0 +1,168 @@
+.footer {
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: row;
+    min-height: 986px;
+    color: beige;
+    font-family: 'Inclusive Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.footer-items {
+    background-color: #0d1d0b;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+
+}
+
+.footer-items-left {
+
+    background-color: beige;
+    border-right: 3px dashed beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #0d1d0b;
+}
+
+.footer-items-left-items {
+    flex: 1;
+    margin: 50px;
+    font-size: 40px;
+}
+
+.footer-logo1 {
+    flex: 11;
+    color: #0d1d0b;
+
+}
+
+.footer-logo2 {
+    flex: 11;
+}
+
+.copyright-text {
+    font-size: 20px;
+    transform: translate(0%, 50%);
+    padding-left: 40px;
+}
+
+
+.subscription-text {
+    font-size: 50px;
+}
+
+.email-box {
+    border: none;
+    background: beige;
+    outline: 0;
+    margin-top: 40px;
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.footer-items-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.footer-items-right-items {
+    /* border: 2px solid rgb(255, 255, 255); */
+    padding: 50px;
+    margin: 0;
+}
+
+
+.contacts-text {
+    font-size: 50px;
+    display: flex;
+}
+
+.allcontacts {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.allcontactsi {
+    margin-right: 10px;
+}
+
+.site-text {
+    font-size: 50px;
+
+}
+
+.site-element {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.site-links {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+.social {
+    display: flex;
+}
+
+.social-links {
+    padding-right: 50px;
+}
+
+.email-bt {
+    padding: 15px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+
+@media (max-width: 1020px) {
+    .footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer-items-left {
+        border: none;
+        order: 1;
+    }
+}
+
+.gyanam-svg {
+    width: 10em;
+}
+
+@media (max-width: 640px) {
+
+    .allcontacts {
+        flex-direction: column;
+    }
+
+    .allcontactsi {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .gyanam-svg {
+        width: 7em;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .gyanam-svg {
+        width: 6em;
+    }
+}
