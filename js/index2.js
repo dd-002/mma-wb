@@ -24,26 +24,26 @@ const fx28Titles = [...document.querySelectorAll('.content__title[data-splitting
 const fx29Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect29]')];
 
 // Lenis smooth scrolling
-//let lenis;
+let lenis;
 
 // Initialize Lenis smooth scrolling
-// const initSmoothScrolling = () => {
+const initSmoothScrolling = () => {
 
-//     lenis = new Lenis({
-//         lerp: 0.2,
-//         smooth: true
-//     });
+    lenis = new Lenis({
+        lerp: 0.2,
+        smooth: true
+    });
 
-//     lenis.on('scroll', () => ScrollTrigger.update());
+    lenis.on('scroll', () => ScrollTrigger.update());
 
-//     const scrollFn = (time) => {
-//         lenis.raf(time);
-//         requestAnimationFrame(scrollFn);
-//     };
+    const scrollFn = (time) => {
+        lenis.raf(time);
+        requestAnimationFrame(scrollFn);
+    };
 
-//     requestAnimationFrame(scrollFn);
+    requestAnimationFrame(scrollFn);
 
-// };
+};
 
 // GSAP Scroll Triggers
 const scroll = () => {
@@ -510,9 +510,8 @@ const scroll = () => {
 // Preload images and fonts
 preloadFonts('cvn8slu').then(() => {
     // Remove loader (loading class)
-    document.body.classList.remove('loading');
     // Lenis (smooth scrolling)
-    //initSmoothScrolling();
+    // initSmoothScrolling();
     // GSAP Scroll Triggers
     scroll();
 });

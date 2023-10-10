@@ -2,10 +2,10 @@
   "name": "mma-council-website",
   "version": "1.0.0",
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "description": "",
+  "description": "Official Website Of MMA IIT Bombay",
   "scripts": {
-    "start": "parcel index.html css/index.css --open",
-    "clean": "rm -rf dist/*",
+    "start": "parcel index.html  --open",
+    "clean": "rm -rf .parcel-cache/* rmdir .parcel-cache rm -rf dist/*",
     "build:parcel": "parcel build index.html --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },

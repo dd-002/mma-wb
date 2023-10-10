@@ -125,3 +125,28 @@
     opacity: 0.4;
   }
 }
+
+.council-text {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 100px;
+  top: 70%;
+  transform: rotate(90deg);
+  color: white;
+  z-index: 100;
+}
+.containerbackground { 
+  position: absolute; 
+  font-size: 150px;
+  top: 300; 
+  left: 100; 
+  bottom: 0; 
+  z-index: -100; 
+  transform: rotate(270deg); 
+  -webkit-transform: rotate(270deg); 
+  color: #ffffff; 
+} 
+
+.title {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 50px;
+}
