@@ -39,6 +39,7 @@ li {
     gap: 1em;
     font-size: 25px;
     background: none;
+    z-index: 100;
 }
 
 .menu li:hover {

@@ -271,9 +271,7 @@ main {
 	font-weight: 600;
 }
 
-.content--highlight p {
-	font-size: clamp(1rem, 3vw, 2rem);
-}
+
 
 .content__title {
 	font-size: 12vw;
@@ -292,7 +290,6 @@ main {
 }
 
 .content__title::before {
-	content: '.' counter(section);
 	font-weight: 400;
 	font-family: area-normal, sans-serif;
 	display: block;
