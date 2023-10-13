@@ -61,6 +61,7 @@
   }
 
   .title {
+    display: flex;
     position: absolute;
     z-index: 1;
     color: #fff;
@@ -70,7 +71,6 @@
     font-size: clamp(20px, 3vw, 30px);
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   }
-
   .num {
     position: absolute;
     z-index: 1;
